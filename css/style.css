@@ -164,7 +164,6 @@ nav {
   }
 
   footer {
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -196,7 +195,8 @@ nav a {
   border-width: 1px;
   border-color: #393433;
   margin-top: 24px; /* space of buttons relative to each other*/
-  margin-left: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
   padding: 10px 20px;
 }
 
@@ -485,12 +485,66 @@ nav a:hover, nav nav a:focus {
 
 footer #page-top {
   margin-right: 60px;
+
 }
+
+/* @media screen and (max-width: 600px) {
+  footer #page-top {
+    margin-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+} */
 
 @media screen and (max-width: 600px) {
   footer #page-top {
-    margin-right: 12px;
+    width: 100%;
+    margin: 6px 25%;
   }
+
+  footer #email {
+    width: 100%;
+    margin: 6px 25%;
+  }
+
+  footer #linkedin {
+    width: 100%;
+    margin: 6px 25%;
+  }
+
+  /* header .home-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5%;
+    padding: 6px 25%;
+    justify-self: center;
+  }
+
+  header #work {
+    display: flex;
+    width: 100%;
+    margin: 5%;
+    padding: 6px 25%;
+    justify-self: center;
+  }
+
+  header #about {
+    display: flex;
+    width: 100%;
+    margin: 5%;
+    padding: 6px 25%;
+    justify-self: center;
+  }
+
+  header #resume {
+    display: flex;
+    width: 100%;
+    margin: 5%;
+    padding: 6px 25%;
+    justify-self: center;
+  } */
   
 }
 
@@ -1066,20 +1120,27 @@ u {
 
 @media screen and (max-width: 480px) {
   .banner {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5% 48px;
   }
-}
 
-/* @media screen and (min-width: 480px) {
   .banner-img-horizontal {
     display: none;
+  } 
+
+  .banner-img-middle {
+    display: block;
+   }
+}
+
+@media screen and (min-width: 480px) {
+  .banner-img-horizontal {
+    display: block;
    }
    
    .banner-img-middle {
-     display: block;
+     display: none;
     }
-} */
+}
 
 @media screen and (max-width: 900px) {
   .preview-img-desktop {
@@ -1107,15 +1168,7 @@ u {
   }
 }
 
-@media screen and (max-width: 900px) {
-  /* .banner-img-horizontal {
-    display: none;
-  }
-
-  .banner-img-middle {
-    display: block;
-  } */
-
+@media screen and (max-width: 1000px) {
   .banner div {
     display: flex;
     flex-wrap: wrap;
