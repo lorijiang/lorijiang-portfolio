@@ -415,9 +415,13 @@ nav a:hover, nav nav a:focus {
     width: 100%;
   }
   
-  .bio-container img, figcaption {
+  .bio-container img figcaption {
     width: 60%;
     margin: auto;
+  }
+
+  .microsite-pages {
+    display: block;
   }
 }
 
