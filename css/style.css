@@ -719,6 +719,10 @@ footer .footer-credit {
   background-color: #e8e8e8;
 }
 
+.white-theme {
+  background-color: #ffffff;
+}
+
 .blue-theme {
   background-color: #6F85FF;
 }
@@ -892,6 +896,16 @@ u {
 
 .key-solution {
   /* background-color: #E0F18B; */
+  border-radius: 24px;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  gap: 5%;
+}
+
+.problem-framing {
   border-radius: 24px;
   padding-left: 4%;
   padding-right: 4%;
@@ -1081,11 +1095,17 @@ u {
   }
 }
 
-.turning-point div {
+.turning-point {
   display: flex;
   flex-wrap: wrap;
   margin-top: 48px;
   align-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .turning-point .hong2 {
+    width: 100%;
+  }
 }
 
 .turning-point img {
