@@ -146,9 +146,19 @@ button:hover, button:focus {
   margin-right: 15%;
 }
 
+.small-width {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .center {
   display: flex;
   margin: auto;
+}
+
+.scenario-video div {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 950px) {
@@ -712,7 +722,8 @@ footer .footer-credit {
 }
 
 .yellow-theme {
-  background-color: #ffe270;
+  background-color: #05141F;
+  color: white;
 }
 
 .grey-theme {
@@ -752,6 +763,7 @@ footer .footer-credit {
   flex-wrap: wrap;
   margin-top: 24px;
   margin-bottom: 24px;
+  align-items: center;
 }
 
 .brainstorm {
