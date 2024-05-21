@@ -44,11 +44,11 @@ h1 {
   color: #393433;
   margin-top: 0px;
   margin-bottom: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: #393433;
   margin-top: 0px;
   margin-bottom: 24px;
@@ -59,7 +59,7 @@ h3 {
   font-size: 18px;
   color: #393433;
   margin-bottom: 12px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h4 {
@@ -71,7 +71,7 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
   /* color: #393433; */
   color: black;
@@ -80,10 +80,11 @@ p {
 }
 
 li {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 14px;
   font-weight: 300;
   line-height: 24px;
+  margin-left: 24px;
 }
 
 img {
@@ -159,6 +160,7 @@ button:hover, button:focus {
 .scenario-video div {
   display: flex;
   justify-content: center;
+  width: 48%;
 }
 
 @media screen and (max-width: 950px) {
@@ -1111,7 +1113,7 @@ u {
   display: flex;
   flex-wrap: wrap;
   margin-top: 48px;
-  align-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px) {
