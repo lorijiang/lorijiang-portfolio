@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lori Jiang</title>
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/fonts.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <header>
+            <nav>
+                <div >
+                    <a href="./index.html" class="home-logo"> lori jiang </a>
+                </div>
+                    
+                <div>
+                    <a href="./index.html">work</a>
+                    <a href="./about.html">about</a>
+                    <a href="./about.html">resume</a>
+                </div>
+            </nav>
+        </header>
+
+        <div id="password-form">
+            <h2>Due to NDA, this page is password protected.</h2>
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="checkPassword()">submit</button>
+        </div>
+    
+    
+        <script src="script.js"></script>
+
+        <section>
+
+        <div id="protected-content" style="display:none;">
+
+            <div class="preview-img">
+                <img src="img/solace-upgrades/preview-img.png" class="preview-img-desktop" alt="prototype image">
+                <img src="img/solace-upgrades/preview-img-mobile.png" class="preview-img-mobile" alt="prototype image">
+            </div>
+            
+            <div class="text-width section purple-theme context-container">
+                <div class="jiang0 context-container-row">
+                    <div class="jiang1 item">
+                        <h3>Team</h3>
+                        <p>Jenna Foreman <br>(UX Manager)</p>
+                    </div>
+                    <div class="jiang1 item">
+                        <h3>My Roles</h3>
+                        <p> Interaction Design <br> UX Design</p>
+                    </div>
+                    <div class="jiang1 item">
+                        <h3>Tools</h3>
+                        <p>Figma</p>
+                    </div>
+                    <div class="jiang1 item">
+                        <h3>Timeline</h3>
+                        <p>2 months <br> (Nov 2024 - Dec 2025)</p>
+                    </div> 
+                </div>
+                <div class="jiang0">
+                    <div class="jiang2">
+                        <h3> Overview</h3>
+                    </div>
+                    <div class="jiang3">
+                        <p> During my co-op at Solace, I designed a customer-triggered upgrade feature, including UIs, screen interactions, and visual specs, while validating designs through weekly reviews and presented the final design to stakeholders, receiving highly positive feedback and approval.</div>
+                </div>
+            </div>
+
+           
+            
+
+            <div class="space purple-theme problem-solution-container">
+                <div>
+                    <h4> Problem Statement</h4>
+                    <h2> Solace customers are frustrated by delays and lack of visibility in service upgrades. </h2>
+                   
+                    <p> The service upgrade process is currently manual and requires appointment scheduling between customers and Product Engineers. When versions are deprecated, this coordination can cause delays of up to 6 weeks. Additionally, once the upgrade starts, limited progress feedback creates uncertainty for customers.</p>
+                    </p>
+                </div>
+
+                <div class="space">
+                    <h4> Solution</h4>
+                    <h2> Automated, self-triggered upgrades with visual status tracking. </h2>
+                    <p>Automating self-triggered upgrades with visual progress tracking gives customers control and keeps them informed, reducing wait times and uncertainty while easing the workload for Product Engineers.</p>
+                </div>  
+            </div>
+
+            <div class="text-width section">
+                <h3> Demo of Newly Released Feature</h3>
+                <p> Before getting into the design process, this is a preview showcasing the final implemented design:</p>
+                <img src="img/solace-upgrades/upgrade-demo.gif" alt="Demo of upgrades process">
+            </div>
+
+            
+                <button class="center section" type="button" onclick="location.href='#final-design'"> skip to final design ↓</button> 
+        
+        
+            
+            <div class="text-width section" id="design-process">
+                <h4> Discovery</h4>
+                <h2> Current Upgrade Process</h2>
+                <p></p>
+                <img src="img/solace-upgrades/journey-map.png">
+            </div>
+
+            <div class="flexbox section purple-theme problem-statement-container">
+                <div>
+                    <h4>Define</h4>
+                    <h2> Problem Framing </h2>
+                    <p> How might we improve efficiency and visibility of the upgrade process in order to <strong>reduce wait times and uncertainty</strong> for customers and <strong>reduce workload</strong> for Product Engineers?
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="text-width section">
+                <h4> Ideate</h4>
+                <h2> User Flows</h2>
+                <p> After meeting with the product owner and lead developer to align on the key requirements, business goals, user goals, and technical limitations, I created high level flows to map out the interactions needed for the user to complete the upgrade. Based on feedback, this was the final flow chosen: </p>
+                    <!-- <p>I learned that these high level mocks are effective in removing the distracting details of the page and communicating the most important parts of the flow in isolation. </p> -->
+                <img src="img/solace-upgrades/flow.png">
+            </div>
+
+            <div class="text-width section">
+                <h2> Interaction Design</h2>
+                <p> I created detailed high-fidelity wireframes with annotated design rationale to illustrate user interactions during the upgrade process. The wireframes covered the full flow, including feature discovery, decision pathways, error states, and completion messages.
+                </p>
+                <img src="img/solace-upgrades/wireframes.png">
+            </div>
+
+            <div class="text-width section">
+                <p>Throughout multiple iterations, I refined the design based on feedback in review sessions with the UX team, product owner, and developers. Collaborating with cross-functional teams helped me balance differing perspectives from design, development, and business sides in my final designs.</p>
+            </div>
+
+            <div class="flexbox section final-design-container purple-theme" id="final-design">
+                <div>
+                    <h4> Prototype</h4>
+                    <h2> Key Design Decisions</h2>
+                </div>
+            </div>
+
+            <div class="text-width section">
+                <h4> Key Design Decisions (1/5) </h4>
+                <h3> Initiating the Upgrade</h3>
+                <p> Upgrades are currently manual, with the upgrades area displaying only the latest version information and no interactivity. To give customers more control, a 'Plan Upgrade' button and notification banners were added to introduce this new feature.</p>
+            </div>
+
+            <div class="img-width section">
+                <img src="img/solace-upgrades/upgrade-button.png">
+            </div>
+
+            <div class="text-width section">
+                <h4> Key Design Decisions (2/5) </h4>
+                <h3> Configuring and Triggering the Upgrade </h3>
+                <p> Due to a capacity limit, customers can only upgrade if space is available after clicking the ‘Plan Upgrade’ button. If room is available, they can select their target version and receive the necessary information to make an informed decision. If no space is available, they’ll be notified to try again later. </p>
+            </div>
+
+            <div class="img-width section">
+                <img src="img/solace-upgrades/configure-upgrade.png">
+            </div>
+
+            <div class="text-width section">
+                <h4> Key Design Decisions (3/5) </h4>
+                <h3> Showing Upgrade Progress</h3>
+                <p> Currently, the upgrade progress is hidden from customers. To reduce uncertainty, we added a live upgrade log with status updates reflecting the internal process. While the steps are more complex internally, they were grouped into 3 steps (pre-checks, upgrades, and post-checks) to make the progress tracker more user-friendly.</p>
+            </div>
+           
+            <div class="img-width section">
+                <img src="img/solace-upgrades/upgrade-progress.png">
+            </div>
+            
+            <div class="text-width section">
+                <h4> Key Design Decisions (4/5) </h4>
+                <h3> Communicating Upgrade Errors</h3>
+                <p> Errors may occur during pre-checks, upgrades, and post-checks at various severity levels. Error message banners have been added with suggested actions to resolve issues, and Product Engineers are notified if the error is unable to be fixed by the customer themselves.</p>
+            </div>
+           
+            <div class="img-width section">
+                <img src="img/solace-upgrades/error-states.png">
+            </div>
+
+            <div class="text-width section">
+                <h4> Key Design Decisions (5/5) </h4>
+                <h3> Confirming Upgrade Success</h3>
+                <p> When the upgrade is successful, customers are notified with dismissible banners, a completed upgrade log, and a timestamp of completion. The Plan Upgrade button is kept for consistency, but if triggered again, informs the customer that their version is already up to date.</p>
+            </div>
+           
+            <div class="img-width section">
+                <img src="img/solace-upgrades/success.png">
+            </div>
+
+            <div class="text-width section">
+                <h2> Developer Handoff</h2>
+                <h3> Visual Specifications to Ensure Smooth Handoff</h3>
+                <p> In addition to detailed annotations on the design mocks, I included a page with detailed specifications about font, colours, and spacing in order to ensure a smooth handoff to developers. This is an example of one of the visual specs created for the upgrade log, one of the new elements of the feature. </p>
+                <img src="img/solace-upgrades/specs.png">
+            </div>
+                   
+            <div class="text-width section">
+                <h2> Impact and Next Steps</h2> 
+                
+                <p> This new customer-triggered upgrade feature was just released last month and aims to improve efficiency by reducing Product Engineers' workload to assisting during error states only, while offering customers quicker and more transparent upgrades.
+
+                   <br> <br> The MVP has been released internally at Solace, and we are currently gathering feedback from internal employees for improvements. I am currently working on the next phase of the feature, which involves adding a scheduling component for more predictable upgrades. </p>
+                   <img src="img/solace-upgrades/upgrade-demo.gif" alt="Demo of upgrades process">
+            </div>
+            
+            <div class="section">
+                <button class="center" id="back-to-process" type="button" onclick="location.href='#design-process'"> back to design process ↑</button>
+
+            </div>
+            
+           
+            <div class="flexbox challenges-container section text-width">
+
+                <div class="section">
+                    <h4> Final Takeaways </h4>
+                    <h2>What I learned...</h2>
+                    <h3> 1) Cross-functional teams bring diverse perspectives.</h3>
+                    <p> Reviewing my work with designers, product owners, and engineers, helped me gain diverse perspectives throughout the project and as a designer, I learned to balance business needs, user needs, and technical limitations to find the best solution. </p>
+                    <h3> 2) Know your audience when presenting. </h3>
+                    <p> I presented to UX, product owners, and developers throughout the project, learning to adjust the level of detail, context, and questions in my presentations to suit each audience. With practice, I received positive feedback and approval during my final stakeholder presentation, concluding the project on a high note. </p>
+                </div>
+        
+             </div>
+
+
+        </div>
+
+        </section>
+
+        <!-- <button class="center" id="other-projects" type="button" onclick="location.href='./index.html#projects'"> see other projects </button>  -->
+
+        
+        
+        <footer class="text-width">
+            <button id="page-top" type="button" onclick="location.href='./index.html'">← back to work</button> <!--Citation:https://www.tutorialspoint.com/html/html_email_links.html-->
+            <button id="email" type="button" onclick="location.href='mailto: lja47@.ca'">  email </button> <!--Citation:https://www.tutorialspoint.com/html/html_email_links.html-->
+            <button id="linkedin" type="button" onclick="location.href='https://www.linkedin.com/in/lorijiang/'" target="_blank"> linkedin </button> <!--Citation:https://www.youtube.com/watch?v=JnGSFHazTkg&ab_channel=CodingArtist-->   
+                
+            <div class="footer-credit">
+                <p> Designed and coded by Lori Jiang &copy 2025 </p>
+            </div>
+            
+        </footer>
+       
+       
+    </body>
+                
+</html>
